@@ -1,0 +1,44 @@
+<html>
+<head>
+  <title>hanzi app</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Изучаем китайские иероглифы</h1>
+  <p>Учимся через ключи, картинки, письмо и самопроверку.</p>
+
+<div class="card">
+  <h2>Учебная карточка</h2>
+  <p id="counter">Карточка 1/3</p>
+
+  <p  id="character" class='hanzi'lang="zh">人</p>
+  <p id="pronunciation">Произношение: rén</p>
+  <p id="key"></p>
+
+  <button id="answr-button">Показать значение</button>
+
+  <div id="meaning" hidden>
+    <p id="translation">Значение: человек</p>
+  <p id="association">Ассоциация: две черты напоминают ноги шагающего человека.</p>
+   <img id="image" alt="">
+</div>
+<button id="next-button">Следующий →</button>
+</div>
+<div class="card">
+    <h2>Прописывание</h2>
+    <p>Посмотри на иероглиф и попробуй его повторить.</p>
+
+    <canvas id="canvas" width="300" height="300"></canvas>
+    <button id="clear">Очистить поле</button>
+    </div>
+<div class="card">
+  <h2>Самопроверка</h2>
+  <p>Выбери правильное значение</p>
+  <p id="quiz-character" class="hanzi" lang="zh"></p>
+  <div id="quiz-options"></div>
+  <p id="quiz-result"aria-live="polite"></p>
+  <button id="quiz-next" disabled>Следующий вопрос</button>
+</div>
+  <script src="app.js"></script>
+</body>
+</html>
